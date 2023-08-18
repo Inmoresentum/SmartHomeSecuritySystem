@@ -23,7 +23,7 @@ String serverName = "192.168.19.50";  // Doing stuf for the local network
 
 String serverPath = "/upload";  // Tomcat upload route
 
-const int serverPort =80;
+const int serverPort = 80;
 
 const int timerInterval = 20000;    // time (milliseconds) between each HTTP POST image
 unsigned long previousMillis = 0;   // last time image was sent
@@ -107,16 +107,20 @@ void setup() {
     delay(1000);
     ESP.restart();
   }
-
-  sendPhoto(); 
+  sendPhoto();
 }
 
 void loop() {
-  unsigned long currentMillis = millis();
-  if (currentMillis - previousMillis >= timerInterval) {
-    sendPhoto();
-    previousMillis = currentMillis;
-  }
+  if (digitalRead(13)== LOW){
+      Serial.println("Yay Object is detected");
+      sendPhoto();
+      delay(1000);
+    }
+    else {
+      Serial.println("SAD no object is detected");
+      delay(1000);
+      
+    }
 }
 
 String sendPhoto() {
