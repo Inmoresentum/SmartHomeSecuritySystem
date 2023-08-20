@@ -7,8 +7,6 @@ import cv2
 import os
 import uuid
 
-# declare counter variable
-
 
 def save_img(img):
     img_dir = "esp32_images"
@@ -16,8 +14,6 @@ def save_img(img):
         os.mkdir(img_dir)
     cv2.imwrite(os.path.join(img_dir, "img_" + str(uuid.uuid1()) + ".jpg"), img)
 
-
-# print("Image Saved", end="\n") # debug
 
 @app.route('/')
 @app.route('/index', methods=['GET'])
