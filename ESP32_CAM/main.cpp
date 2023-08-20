@@ -18,7 +18,7 @@
 const char* ssid = "POCO X3 Pro";
 const char* password = "#TECHNOLOGY";
 
-String serverName = "192.168.19.50";  // Doing stuf for the local network 
+String serverName = "192.168.19.220";  // Doing stuf for the local network
 //String serverName = "example.com";
 
 String serverPath = "/upload";  // Tomcat upload route
@@ -51,14 +51,14 @@ WiFiClient client;
 
 
 void setup() {
-  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0); 
+  WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
   Serial.begin(115200);
 
   WiFi.mode(WIFI_STA);
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
-  WiFi.begin(ssid, password);  
+  WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
     delay(500);
@@ -99,7 +99,7 @@ void setup() {
     config.jpeg_quality = 12;  //0-63 lower number means higher quality
     config.fb_count = 1;
   }
-  
+
   // camera init
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
@@ -108,19 +108,19 @@ void setup() {
     ESP.restart();
   }
   sendPhoto();
+
+  // Bind Wakeup to GPIO13 going LOW
+  esp_sleep_enable_ext0_wakeup(GPIO_NUM_13, 0);
+
+  Serial.println("Entering sleep mode");
+  delay(1000);
+
+  // Enter deep sleep mode
+  esp_deep_sleep_start();
 }
 
 void loop() {
-  if (digitalRead(13)== LOW){
-      Serial.println("Yay Object is detected");
-      sendPhoto();
-      delay(1000);
-    }
-    else {
-      Serial.println("SAD no object is detected");
-      delay(1000);
-      
-    }
+    // We don't have any work here..
 }
 
 String sendPhoto() {
