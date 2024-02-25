@@ -47,7 +47,7 @@
 
 # Acknowledgement
 
-Special Thanks to [Nannigalaxy](https://github.com/Nannigalaxy) and his project [esp32-cam_flask](https://github.com/Nannigalaxy/esp32-cam_flask)
+Special thanks to [Nannigalaxy](https://github.com/Nannigalaxy) and his project [esp32-cam_flask](https://github.com/Nannigalaxy/esp32-cam_flask)
 for the idea and inspiration.
 
 &#160;
