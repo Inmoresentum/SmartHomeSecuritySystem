@@ -42,3 +42,22 @@
         </p>
     <hr width="250px"/>   
 </div>
+
+
+
+# Acknowledgement
+
+Special Thanks to [Nannigalaxy](https://github.com/Nannigalaxy) and his project [esp32-cam_flask](https://github.com/Nannigalaxy/esp32-cam_flask)
+for the idea and inspiration.
+
+&#160;
+
+<p align="center">Copyright &copy; 2023-present 
+     <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
+</p>
+<p align="center">
+    <a href="LICENSE">
+      <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=Apache-2.0&colorA=FFF500&colorB=8F69B4"
+         alt="whatever" style="border-radius: 5px"/>
+   </a>
+</p>
