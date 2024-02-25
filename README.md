@@ -27,14 +27,17 @@
             <a href="https://www.arduino.cc/en/software">
                 <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"  alt="whatever">
             </a>
-            <a>
+            <a href="https://docs.arduino.cc/arduino-cloud/guides/arduino-c/">
                 <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"  alt="whatever">
             </a>
-            <a>
+            <a href="https://www.jetbrains.com/pycharm/">
                 <img src="https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white"  alt="whatever">
             </a>
-            <a>
+            <a href="https://www.python.org/downloads/release/python-3100/">
                 <img src="https://img.shields.io/badge/Python 3.10-FFD43B?style=for-the-badge&logo=python&logoColor=blue"  alt="whatever">
+            </a>
+            <a href="https://flask.palletsprojects.com/en/2.3.x/">
+                <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"  alt="whatever">
             </a>
         </p>
     <hr width="250px"/>   
