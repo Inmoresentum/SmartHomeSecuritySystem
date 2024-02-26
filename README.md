@@ -40,14 +40,13 @@
                 <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"  alt="whatever"/>
             </a>
         </p>
-    <hr width="250px"/>   
+    <hr width="250px"/> 
 </div>
-
-
 
 # Acknowledgement
 
-Special thanks to [Nannigalaxy](https://github.com/Nannigalaxy) and his project [esp32-cam_flask](https://github.com/Nannigalaxy/esp32-cam_flask)
+Special thanks to [Nannigalaxy](https://github.com/Nannigalaxy) and his
+project [esp32-cam_flask](https://github.com/Nannigalaxy/esp32-cam_flask)
 for the idea and inspiration.
 
 &#160;
